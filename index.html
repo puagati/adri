@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Te quiero</title>
+  <meta name="description" content="Página con imagen de fondo y mensaje personalizado." />
+  <style>
+    :root {
+      --overlay: rgba(0,0,0,.45); /* oscurece un poco la foto para que se lea el texto */
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: 
+        linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.4)),
+        url('img/fondo1.jpg'); /* ⚠️ Cambia esto por la ruta de tu foto en GitHub */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 10vw, 120px);
+      font-weight: 800;
+      margin: 0;
+      text-shadow: 0 3px 10px rgba(0,0,0,.5);
+    }
+
+    .tel {
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      font-weight: 500;
+      text-shadow: 0 2px 8px rgba(0,0,0,.4);
+    }
+
+    .texto-largo {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      max-width: 700px;
+      line-height: 1.6;
+      text-shadow: 0 2px 8px rgba(0,0,0,.4);
+    }
+  </style>
+</head>
+<body>
+  <section class="hero" role="img" aria-label="Fondo con imagen personalizada">
+    <h1>TE QUIERO</h1>
+    <p class="tel">Tel: 628 456 495 / 663 791 388</p>
+    <p class="texto-largo">
+      Texto largo a partir de aquí...
+    </p>
+  </section>
+</body>
+</html>
