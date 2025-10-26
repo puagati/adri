@@ -60,9 +60,28 @@
     <h1>TE QUIERO</h1>
     <p class="tel">Tel: 628 456 495 / 663 791 388</p>
     <p class="texto-largo">
-      Para que cuando estes aburrida recuerdes algunos de los momentos que hemos vivido juntos.. <3
+      Texto largo a partir de aquí...
     </p>
   </section>
 
   <script>
-    // Lista de imágenes dentro d
+    // Lista de imágenes dentro de la carpeta adri/imagenes/
+    const imagenes = [
+      'imagenes/IMG_4372.JPG',
+      'imagenes/IMG_4373.JPG',
+      'imagenes/IMG_4374.JPG',
+      'imagenes/IMG_4375.JPG'
+    ];
+
+    // Elige una imagen aleatoria
+    const aleatoria = imagenes[Math.floor(Math.random() * imagenes.length)];
+
+    // Aplica la imagen como fondo de la sección .hero
+    const hero = document.getElementById('hero');
+    hero.style.backgroundImage = `
+      linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.4)),
+      url('${aleatoria}')
+    `;
+  </script>
+</body>
+</html>
